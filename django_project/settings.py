@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-t#4=k7s6a(kxx-vlzzl65#j0m6(7jysf8v86*k987yk(4_$(mx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['itsdjangoblogapp.herokuapp.com']
 
 # Application definition
 
@@ -124,6 +125,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'blog-home'
